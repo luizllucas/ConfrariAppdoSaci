@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ConfrariApp"
+             x:Class="ConfrariApp.MainPage"
+             BackgroundImage="backgroundConfrariApp">
+
+    <StackLayout>
+        <Image Source="confrarialogo"
+               Margin="50"/>
+        <Entry x:Name="entryLogin"
+               Placeholder="Digite seu Login:"
+               HorizontalTextAlignment="Start"
+               Margin="3"
+               TextColor="White"
+               FontAttributes="Bold"/>
+        <Entry x:Name="entrySenac"
+               Placeholder="Digite sua Senha:"
+               HorizontalTextAlignment="Start"
+               Margin="3"
+               IsPassword="True"
+               TextColor="White"
+               FontAttributes="Bold"/>
+        <Button x:Name="btnEntrar"
+                Text="Entrar"
+                HorizontalOptions="Fill"
+                BackgroundColor="#CC2619"
+                Margin="10"
+                Opacity="30"
+                TextColor="White"
+                FontAttributes="Bold"
+                BorderRadius="10"/>
+        <Button x:Name="btnCadastrarLogin"
+                Text="Não tenho Cadastro"
+                BackgroundColor="#800B03"
+                Margin="10"
+                BorderRadius="10"
+                Opacity="30"
+                TextColor="White"
+                FontAttributes="Bold"
+                />
+    </StackLayout>
+
+</ContentPage>
