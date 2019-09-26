@@ -16,7 +16,7 @@ namespace ConfrariApp
 
         private void Image_SizeChanged(object sender, EventArgs e)
         {
-
+            //
         }
     }
 }
