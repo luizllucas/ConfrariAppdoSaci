@@ -27,6 +27,7 @@ namespace ConfrariApp
             else if (entryLogin.Text == "admin" ||
                     entrySenha.Text == "admin")
             {
+                
                 string cliente = entryLogin.Text;
                 Navigation.PushAsync(new MenuPrincipalCliente());
             }
