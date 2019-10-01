@@ -10,16 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace ConfrariApp
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class MenuPrincipalCliente : ContentPage
+	public partial class Page2 : ContentPage
 	{
-		public MenuPrincipalCliente ()
+		public Page2 ()
 		{
 			InitializeComponent ();
 		}
-
-        private void BtnCardápio_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new CardapioPage());
-        }
-    }
+	}
 }
