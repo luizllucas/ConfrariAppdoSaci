@@ -111,5 +111,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\backgroundConfrariApp2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\confrariatoppage.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

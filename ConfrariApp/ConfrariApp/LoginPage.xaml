@@ -12,13 +12,15 @@
                Placeholder="Digite seu Login:"
                HorizontalTextAlignment="Start"
                Margin="3"
-               TextColor="White"/>
+               TextColor="White"
+                       FontAttributes="Italic"/>
                 <Entry x:Name="entrySenha"
                Placeholder="Digite sua Senha:"
                HorizontalTextAlignment="Start"
                Margin="3"
                IsPassword="True"
-               TextColor="White"/>
+               TextColor="White"
+                       FontAttributes="Italic"/>
                 <Button x:Name="btnEntrar"
                 Text="Entrar"
                 HorizontalOptions="Fill"
