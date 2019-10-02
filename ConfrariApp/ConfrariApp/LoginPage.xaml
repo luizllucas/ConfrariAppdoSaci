@@ -9,18 +9,18 @@
                 <Image Source="confrariatoppage"
                Margin="0,0,0,50"/>
                 <Entry x:Name="entryLogin"
-               Placeholder="Digite seu Login:"
-               HorizontalTextAlignment="Start"
-               Margin="3"
-               TextColor="White"
+                   Placeholder="Digite seu Login:"
+                   HorizontalTextAlignment="Start"
+                   Margin="3"
+                   TextColor="black"
                        FontAttributes="Italic"/>
                 <Entry x:Name="entrySenha"
-               Placeholder="Digite sua Senha:"
-               HorizontalTextAlignment="Start"
-               Margin="3"
-               IsPassword="True"
-               TextColor="White"
-                       FontAttributes="Italic"/>
+                   Placeholder="Digite sua Senha:"
+                   HorizontalTextAlignment="Start"
+                   Margin="3"
+                   IsPassword="True"
+                   TextColor="White"
+                   FontAttributes="Italic"/>
                 <Button x:Name="btnEntrar"
                 Text="Entrar"
                 HorizontalOptions="Fill"
@@ -52,7 +52,11 @@
                             Clicked="BtnCadastrarLogin_Clicked"/>
                 </StackLayout>
 
-        
+                <ImageButton Source="loginfacebook"
+                             HeightRequest="120"
+                             BackgroundColor="Transparent"></ImageButton>
+
+
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

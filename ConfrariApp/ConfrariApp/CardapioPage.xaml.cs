@@ -17,5 +17,20 @@ namespace ConfrariApp
 			InitializeComponent ();
             NavigationPage.SetHasNavigationBar(this, false);
         }
-	}
+
+        private void BtnBebidas_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnPorcoes_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnSuvenirs_Clicked(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

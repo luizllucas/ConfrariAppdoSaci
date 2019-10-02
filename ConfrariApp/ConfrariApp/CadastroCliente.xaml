@@ -12,34 +12,39 @@
                    TextColor="White">
                            </Label>
             <Entry x:Name="entryNomeCliente"
-                   Placeholder="Nome do Usuário:"
+                   Placeholder="Nome do Usuário"
                    Margin="5,30,30,0"
-                   TextColor="White">
+                   TextColor="Black"
+                    FontSize="16">
             </Entry>
             <Entry x:Name="entryLoginCliente"
-                       Placeholder="Login:"
+                       Placeholder="Login"
                    Margin="5,10,30,0"
-                   TextColor="White">
-            </Entry>
-                <StackLayout Orientation="Horizontal">
+                    TextColor="Black"
+                   FontSize="16"/>
+
+            <StackLayout Orientation="Horizontal">
                 <Entry x:Name="entryDataNascimento"
-                       Placeholder="Data de Nascimento:"
+                       Placeholder="Data de Nascimento"
                        Keyboard="Numeric"
                        Margin="5,10,30,0"
-                       TextColor="White"/>
+                       TextColor="Black"
+                        FontSize="16"/>
             </StackLayout>
             <Entry x:Name="entrySenha" 
                    Placeholder="Digite sua Senha (Mínimo 6 caracteres)"
                    FontAttributes="Italic"
                    IsPassword="true"
                    Margin="5,10,30,0"
-                   TextColor="White"/>
+                    TextColor="Black"
+                    FontSize="16"/>
             <Entry x:Name="entrySenha2" 
                    Placeholder="Confirme sua Senha"
                    FontAttributes="Italic"
                    IsPassword="True"
                    Margin="5,10,30,0"
-                   TextColor="White"/>
+                    TextColor="Black"
+                    FontSize="16"/>
             <StackLayout Orientation="Horizontal">
                 <Button x:Name="btnCadastrar"
                         Text="Cadastrar"

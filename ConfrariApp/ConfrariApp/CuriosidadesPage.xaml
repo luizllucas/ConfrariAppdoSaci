@@ -11,6 +11,20 @@
                    FontAttributes="Bold"
                    TextColor="White">
             </Label>
+            <Button x:Name="btnVideoSaci"
+                    Text="Repórter encontra Saci em Botucatu"
+                    Clicked="BtnVideoSaci_Clicked"
+                    Margin="30,30,30,0"
+                    BackgroundColor="#800B03"
+                    TextColor="White"
+                    BorderRadius="20"></Button>
+            <Button x:Name="btnColetaneaLink"
+                    Text="Livro 'O SACI - Monteiro Lobato'"
+                    Margin="30,0,30,30"
+                    BackgroundColor="#800B03"
+                    TextColor="White"
+                    BorderRadius="20"
+                    Clicked="BtnColetaneaLink_Clicked"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

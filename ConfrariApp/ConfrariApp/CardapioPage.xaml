@@ -12,24 +12,38 @@
                    TextColor="White">
             </Label>
 
-            <Label Text="Bebidas"
+            <Button 
+                    Text="Bebidas"
                    FontSize="18"
                    FontAttributes="Italic"
-                   HorizontalTextAlignment="Center"
                    TextColor="White"
-                   Margin="0,30,0,0"/>
-           
-            <Label Text="Porções"
+                   Margin="30,80,30,30"
+                x:Name="btnBebidas"
+                BackgroundColor="#800B03"
+                BorderRadius="10"
+                Clicked="BtnBebidas_Clicked"/>
+            <Button 
+                    Text="Porções"
                    FontSize="18"
                    FontAttributes="Italic"
-                   HorizontalTextAlignment="Center"
-                   TextColor="White"/>
-            <Label Text="Suvenirs"
+                   TextColor="White"
+                   Margin="30,30,30,30"
+                x:Name="btnPorcoes"
+                BackgroundColor="#800B03"
+                BorderRadius="10"
+                Clicked="BtnPorcoes_Clicked"/>
+            <Button 
+                    Text="Suvenirs"
                    FontSize="18"
                    FontAttributes="Italic"
-                   HorizontalTextAlignment="Center"
-                   TextColor="White"/>
-            
+                   TextColor="White"
+                   Margin="30,30,30,30"
+                x:Name="btnSuvenirs"
+                BackgroundColor="#800B03"
+                BorderRadius="10"
+                Clicked="BtnSuvenirs_Clicked"/>
+
+
 
 
         </StackLayout>
