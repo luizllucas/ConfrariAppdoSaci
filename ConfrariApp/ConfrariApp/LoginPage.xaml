@@ -6,8 +6,8 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout>
-                <Image Source="logoconfraria"
-               Margin="25,20,20,20"/>
+                <Image Source="confrariatoppage"
+               Margin="0,0,0,50"/>
                 <Entry x:Name="entryLogin"
                Placeholder="Digite seu Login:"
                HorizontalTextAlignment="Start"
@@ -31,15 +31,28 @@
                 FontAttributes="Bold"
                 BorderRadius="10"
                 Clicked="BtnEntrar_Clicked"/>
-                <Button x:Name="btnCadastrarLogin"
-                Text="Não tenho Cadastro"
-                BackgroundColor="#800B03"
-                Margin="20,5,20,20"
-                BorderRadius="10"
-                Opacity="30"
-                TextColor="White"
-                FontAttributes="Bold"
-                Clicked="BtnCadastrarLogin_Clicked"/>
+                <StackLayout Orientation="Horizontal">
+                    <Button x:Name="btnCadastrarLogin"
+                             Text="Não tenho Cadastro"
+                             BackgroundColor="#800B03"
+                            Margin="50,0,0,0"
+                             Padding="10,10,10,10"
+                            BorderRadius="10"                   
+                            TextColor="White"
+                             FontSize="11"
+                            Clicked="BtnCadastrarLogin_Clicked"/>
+                    <Button x:Name="btnEsqueciSenha"
+                             Text="Esqueci a Senha"
+                             BackgroundColor="#800B03"
+                            Margin="5,0,10,0"
+                             Padding="10,10,10,10"
+                            BorderRadius="10"                   
+                            TextColor="White"
+                             FontSize="11"
+                            Clicked="BtnCadastrarLogin_Clicked"/>
+                </StackLayout>
+
+        
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

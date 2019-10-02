@@ -5,21 +5,32 @@
              BackgroundImage="backgroundConfrariApp2">
     <ContentPage.Content>
         <StackLayout>
-            <Image Source="sucos"
-                   Margin="100,20,100,20">
-                 </Image>
+
             <Label Text="Cardápio"
                    FontSize="30"
+                   Margin="5,5,0,0"
                    FontAttributes="Italic, Bold"
-                   HorizontalTextAlignment="Center"
-                   TextColor="White">
-            </Label>
-            <Label Text="Deslize para o lado"
-                   FontSize="15"
+                   TextColor="White"/>
+
+            <Label Text="Bebidas"
+                   FontSize="18"
                    FontAttributes="Italic"
                    HorizontalTextAlignment="Center"
-                   TextColor="White">
-            </Label>
+                   TextColor="White"/>
+           
+            <Label Text="Porções"
+                   FontSize="18"
+                   FontAttributes="Italic"
+                   HorizontalTextAlignment="Center"
+                   TextColor="White"/>
+            <Label Text="Suvenirs"
+                   FontSize="18"
+                   FontAttributes="Italic"
+                   HorizontalTextAlignment="Center"
+                   TextColor="White"/>
+            
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
