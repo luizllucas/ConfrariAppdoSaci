@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace ConfrariApp
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class CardapioPage : ContentPage
+	public partial class ProgramacaoPage : ContentPage
 	{
-		public CardapioPage ()
+		public ProgramacaoPage ()
 		{
 			InitializeComponent ();
             NavigationPage.SetHasNavigationBar(this, false);

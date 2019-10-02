@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConfrariApp.CadastroCliente"
+             BackgroundImage="backgroundConfrariApp">
+    <ContentPage.Content>
+        <StackLayout Margin="0,0,0,0">
+            <Label Text="Cadastro de Clientes"
+                   HorizontalTextAlignment="Center"
+                   BackgroundColor="Black"
+                   FontAttributes="Bold"
+                   TextColor="White">
+                           </Label>
+            <Entry x:Name="entryNomeCliente"
+                   Placeholder="Nome do Usuário:"
+                   Margin="5,30,30,0"
+                   TextColor="White">
+            </Entry>
+            <Entry x:Name="entryLoginCliente"
+                       Placeholder="Login:"
+                   Margin="5,10,30,0"
+                   TextColor="White">
+            </Entry>
+                <StackLayout Orientation="Horizontal">
+                <Entry x:Name="entryDataNascimento"
+                       Placeholder="Data de Nascimento:"
+                       Keyboard="Numeric"
+                       Margin="5,10,30,0"
+                       TextColor="White"/>
+            </StackLayout>
+            <Entry x:Name="entrySenha" 
+                   Placeholder="Digite sua Senha (Mínimo 6 caracteres)"
+                   FontAttributes="Italic"
+                   IsPassword="true"
+                   Margin="5,10,30,0"
+                   TextColor="White"/>
+            <Entry x:Name="entrySenha2" 
+                   Placeholder="Confirme sua Senha"
+                   FontAttributes="Italic"
+                   IsPassword="True"
+                   Margin="5,10,30,0"
+                   TextColor="White"/>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="btnCadastrar"
+                        Text="Cadastrar"
+                        Margin="50,50,0,0"
+                        BackgroundColor="#800B03"
+                        BorderRadius="10"
+                        Padding="10,10,10,10"
+                        Clicked="BtnCadastrar_Clicked"
+                        TextColor="White">
+                </Button>
+                <Button x:Name="btnLimpar"
+                        Text="Limpar"
+                        Margin="50,50,0,0"
+                        BackgroundColor="#800B03"
+                        BorderRadius="10"
+                        Padding="10,10,10,10"
+                        Clicked="BtnLimpar_Clicked"
+                        TextColor="White">
+                </Button>
+            </StackLayout>
+                
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

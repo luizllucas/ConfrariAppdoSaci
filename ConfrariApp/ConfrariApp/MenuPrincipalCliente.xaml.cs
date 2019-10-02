@@ -15,11 +15,27 @@ namespace ConfrariApp
 		public MenuPrincipalCliente ()
 		{
 			InitializeComponent ();
-		}
+            NavigationPage.SetHasNavigationBar(this, false);
+        }
 
         private void BtnCardápio_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new CardapioPage());
+        }
+
+        private void BtnReservas_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Reservas());
+        }
+
+        private void BtnProgramacao_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ProgramacaoPage());
+        }
+
+        private void BtnCuriosidades_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new CuriosidadesPage());
         }
     }
 }

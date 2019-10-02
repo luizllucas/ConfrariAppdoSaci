@@ -15,7 +15,8 @@ namespace ConfrariApp
 		public LoginPage ()
 		{
 			InitializeComponent ();
-		}
+            NavigationPage.SetHasNavigationBar(this, false);
+        }
 
         private void BtnEntrar_Clicked(object sender, EventArgs e)
         {
@@ -35,7 +36,7 @@ namespace ConfrariApp
 
         private void BtnCadastrarLogin_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new CadastroCliente());
         }
     }
 }

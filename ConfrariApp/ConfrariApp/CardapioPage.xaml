@@ -5,18 +5,19 @@
              BackgroundImage="backgroundConfrariApp2">
     <ContentPage.Content>
         <StackLayout>
-
             <Label Text="Cardápio"
-                   FontSize="30"
-                   Margin="5,5,0,0"
-                   FontAttributes="Italic, Bold"
-                   TextColor="White"/>
+                   HorizontalTextAlignment="Center"
+                   BackgroundColor="Black"
+                   FontAttributes="Bold"
+                   TextColor="White">
+            </Label>
 
             <Label Text="Bebidas"
                    FontSize="18"
                    FontAttributes="Italic"
                    HorizontalTextAlignment="Center"
-                   TextColor="White"/>
+                   TextColor="White"
+                   Margin="0,30,0,0"/>
            
             <Label Text="Porções"
                    FontSize="18"
