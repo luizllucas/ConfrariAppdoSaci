@@ -17,5 +17,10 @@ namespace ConfrariApp
 			InitializeComponent ();
             NavigationPage.SetHasNavigationBar(this, false);
         }
-	}
+
+        private void ButtonAdicionarProgramacao_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AdicionarProgramacao());
+        }
+    }
 }

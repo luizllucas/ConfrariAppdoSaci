@@ -10,27 +10,17 @@ using Xamarin.Forms.Xaml;
 namespace ConfrariApp
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class CardapioPage : ContentPage
+	public partial class BebidasPage : ContentPage
 	{
-		public CardapioPage ()
+		public BebidasPage ()
 		{
 			InitializeComponent ();
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        private void BtnBebidas_Clicked(object sender, EventArgs e)
+        private void ButtonAdicionarBebida_Clicked(object sender, EventArgs e)
         {
-
-        }
-
-        private void BtnPorcoes_Clicked(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BtnSuvenirs_Clicked(object sender, EventArgs e)
-        {
-
+            Navigation.PushAsync(new AdicionarBebida());
         }
     }
 }

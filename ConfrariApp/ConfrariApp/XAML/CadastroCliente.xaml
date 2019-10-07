@@ -14,45 +14,56 @@
             <Entry x:Name="entryNomeCliente"
                    Placeholder="Nome do Usuário"
                    Margin="5,30,30,0"
-                   TextColor="Black"
-                    FontSize="16">
+                   TextColor="White"
+                    FontSize="16"
+                   PlaceholderColor="White">
+                   
             </Entry>
             <Entry x:Name="entryLoginCliente"
                        Placeholder="Login"
                    Margin="5,10,30,0"
-                    TextColor="Black"
-                   FontSize="16"/>
+                    TextColor="White"
+                   FontSize="16"
+                   PlaceholderColor="White"/>
 
             <StackLayout Orientation="Horizontal">
                 <Entry x:Name="entryDataNascimento"
                        Placeholder="Data de Nascimento"
-                       Keyboard="Numeric"
                        Margin="5,10,30,0"
-                       TextColor="Black"
-                        FontSize="16"/>
+                       TextColor="white"
+                        FontSize="16"
+                       PlaceholderColor="White"/>
+                <Entry x:Name="entryTelefone"
+                       Placeholder="Telefone"
+                       Keyboard="Numeric"
+                       Margin="2,10,30,0"
+                       TextColor="white"
+                       FontSize="16"
+                       PlaceholderColor="white"></Entry>
             </StackLayout>
             <Entry x:Name="entrySenha" 
                    Placeholder="Digite sua Senha (Mínimo 6 caracteres)"
                    FontAttributes="Italic"
                    IsPassword="true"
                    Margin="5,10,30,0"
-                    TextColor="Black"
-                    FontSize="16"/>
+                    TextColor="white"
+                    FontSize="16"
+                   PlaceholderColor="white"/>
             <Entry x:Name="entrySenha2" 
                    Placeholder="Confirme sua Senha"
                    FontAttributes="Italic"
                    IsPassword="True"
                    Margin="5,10,30,0"
-                    TextColor="Black"
-                    FontSize="16"/>
+                    TextColor="white"
+                    FontSize="16"
+                   PlaceholderColor="White"/>
             <StackLayout Orientation="Horizontal">
-                <Button x:Name="btnCadastrar"
+                <Button x:Name="btnCadastrarCliente"
                         Text="Cadastrar"
                         Margin="50,50,0,0"
                         BackgroundColor="#800B03"
                         BorderRadius="10"
                         Padding="10,10,10,10"
-                        Clicked="BtnCadastrar_Clicked"
                         TextColor="White">
                 </Button>
                 <Button x:Name="btnLimpar"
@@ -65,7 +76,15 @@
                         TextColor="White">
                 </Button>
             </StackLayout>
-                
+            <Button x:Name="btnConsultar"
+                        Text="Consultar"
+                        Margin="60,50,70,50"
+                        BackgroundColor="#800B03"
+                        BorderRadius="10"
+                        Padding="10"
+                        Clicked="BtnConsultar_Clicked"
+                        TextColor="White"/>
+
 
         </StackLayout>
     </ContentPage.Content>

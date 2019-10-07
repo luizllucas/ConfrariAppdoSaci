@@ -10,12 +10,17 @@ using Xamarin.Forms.Xaml;
 namespace ConfrariApp
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Reservas : ContentPage
+	public partial class SuvenirsPage : ContentPage
 	{
-		public Reservas ()
+		public SuvenirsPage ()
 		{
 			InitializeComponent ();
             NavigationPage.SetHasNavigationBar(this, false);
         }
-	}
+
+        private void ButtonAdicionarSuvenir_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AdicionarSuvenir());
+        }
+    }
 }

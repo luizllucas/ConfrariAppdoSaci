@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConfrariApp.XAML;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,6 +32,11 @@ namespace ConfrariApp
             entryDataNascimento.Text = "";
             entrySenha.Text = "";
             entrySenha2.Text = "";
+        }
+
+        private void BtnConsultar_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ConsultarCliente());
         }
     }
 }

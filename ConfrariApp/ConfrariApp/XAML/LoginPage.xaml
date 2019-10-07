@@ -12,25 +12,27 @@
                    Placeholder="Digite seu Login:"
                    HorizontalTextAlignment="Start"
                    Margin="3"
-                   TextColor="black"
-                       FontAttributes="Italic"/>
+                   TextColor="White"
+                       FontAttributes="Italic"
+                       PlaceholderColor="White"/>
                 <Entry x:Name="entrySenha"
                    Placeholder="Digite sua Senha:"
                    HorizontalTextAlignment="Start"
                    Margin="3"
                    IsPassword="True"
                    TextColor="White"
-                   FontAttributes="Italic"/>
+                   FontAttributes="Italic"
+                    PlaceholderColor="White"/>
                 <Button x:Name="btnEntrar"
-                Text="Entrar"
-                HorizontalOptions="Fill"
-                BackgroundColor="#800B03"
-                Margin="20,10,20,5"
-                Opacity="30"
-                TextColor="White"
-                FontAttributes="Bold"
-                BorderRadius="10"
-                Clicked="BtnEntrar_Clicked"/>
+                    Text="Entrar"
+                    HorizontalOptions="Fill"
+                    BackgroundColor="#800B03"
+                    Margin="20,10,20,5"
+                    Opacity="30"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    BorderRadius="10"
+                    Clicked="BtnEntrar_Clicked"/>
                 <StackLayout Orientation="Horizontal">
                     <Button x:Name="btnCadastrarLogin"
                              Text="Não tenho Cadastro"
@@ -54,7 +56,8 @@
 
                 <ImageButton Source="loginfacebook"
                              HeightRequest="120"
-                             BackgroundColor="Transparent"></ImageButton>
+                             BackgroundColor="Transparent">
+                </ImageButton>
 
 
             </StackLayout>

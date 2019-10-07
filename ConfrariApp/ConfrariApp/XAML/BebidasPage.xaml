@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConfrariApp.BebidasPage"
+             BackgroundImage="backgroundConfrariApp">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="listView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Info}">
+                            <TextCell.ContextActions>
+                                <MenuItem Text="Atualizar" 
+                                      x:Name="AtualizarSuvenir" 
+
+                                      CommandParameter="{Binding .}" 
+                                      IsDestructive="False" />
+                                <MenuItem Text="Apagar" 
+                                      x:Name="ApagarSuvenir" 
+ 
+                                      CommandParameter="{Binding .}" 
+                                      IsDestructive="True" />
+                            </TextCell.ContextActions>
+                        </TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="Adicionar" 
+                    x:Name="buttonAdicionarBebida"
+                     HorizontalOptions="Fill"
+                    BackgroundColor="#800B03"
+                    Margin="20,10,20,50"
+                    Opacity="30"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    BorderRadius="10"
+                    Clicked="ButtonAdicionarBebida_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

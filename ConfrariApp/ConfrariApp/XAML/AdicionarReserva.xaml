@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConfrariApp.AdicionarReserva"
+             BackgroundImage="backgroundConfrariApp">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Margin="0,0,0,0">
+                <Label Text="Cadastro de Reservas"
+                   HorizontalTextAlignment="Center"
+                   BackgroundColor="Black"
+                   FontAttributes="Bold"
+                   TextColor="White">
+                </Label>
+                <Entry x:Name="entryNomeclienteReserva"
+                   Placeholder="Nome do Cliente"
+                   Margin="5,30,30,0"
+                   TextColor="white"
+                    FontSize="16"
+                   PlaceholderColor="White"/>
+                <Entry x:Name="entryQtdPessoas"
+                       Placeholder="Quantidade de Pessoas"
+                   Margin="5,10,30,0"
+                    TextColor="white"
+                   FontSize="16"
+                   PlaceholderColor="White"/>
+
+                <Entry x:Name="entryDataReserva"
+                       Placeholder="Data da Reserva"
+                       Margin="5,10,30,0"
+                       TextColor="white"
+                        FontSize="16"
+                       PlaceholderColor="White"/>
+
+                <Entry x:Name="entryObsReserva" 
+                   Placeholder="Observações"
+                   Margin="5,10,30,0"
+                    TextColor="white"
+                    FontSize="16"
+                   PlaceholderColor="white"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Button x:Name="btnCadastrarReserva"
+                        Text="Cadastrar"
+                        Margin="50,50,0,0"
+                        BackgroundColor="#800B03"
+                        BorderRadius="10"
+                        Padding="10,10,10,10"
+                        TextColor="White"
+                            Clicked="BtnCadastrarReserva_Clicked">
+                    </Button>
+                    <Button x:Name="btnLimpar"
+                        Text="Limpar"
+                        Margin="50,50,0,0"
+                        BackgroundColor="#800B03"
+                        BorderRadius="10"
+                        Padding="10,10,10,10"
+                        TextColor="White"
+                            Clicked="BtnLimpar_Clicked">
+                    </Button>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
