@@ -11,7 +11,7 @@ namespace ConfrariApp.Classes
         {
             try
             {
-                var reservas = ((App)Application.Current).conexao.Query<ModelReservas>("SELECT * FROM CadastroReservas");
+                var reservas = ((App)Application.Current).conexao.Query<ModelReservas>("SELECT * FROM CadastroReserva");
                 return reservas;
             }
             catch (Exception ex)
@@ -25,7 +25,7 @@ namespace ConfrariApp.Classes
         {
             try
             {
-                var query = $"INSERT INTO CadastroReservas (nomeCliente, qtdpessoas, data, observacao) VALUES ('{nomeCliente}', '{qtdpessoas}', '{data}', '{observacao}')";
+                var query = $"INSERT INTO CadastroReserva (nomeCliente, qtdpessoas, data, observacao) VALUES ('{nomeCliente}', '{qtdpessoas}', '{data}', '{observacao}')";
                 ((App)Application.Current).conexao.Execute(query);
 
                 return true;
@@ -41,7 +41,7 @@ namespace ConfrariApp.Classes
         {
             try
             {
-                var query = $"UPDATE CadastroReservas SET nomeCliente = '{nomeCliente}', qtdpessoas = '{qtdpessoas}', data = '{data}', observacao = '{observacao}' WHERE id = {id}";
+                var query = $"UPDATE CadastroReserva SET nomeCliente = '{nomeCliente}', qtdpessoas = '{qtdpessoas}', data = '{data}', observacao = '{observacao}' WHERE id = {id}";
                 ((App)Application.Current).conexao.Execute(query);
 
                 return true;
@@ -56,7 +56,7 @@ namespace ConfrariApp.Classes
         {
             try
             {
-                var query = $"DELETE FROM CadastroReservas";
+                var query = $"DELETE FROM CadastroReserva";
                 ((App)Application.Current).conexao.Execute(query);
                 return true;
             }
