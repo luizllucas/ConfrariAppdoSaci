@@ -12,7 +12,7 @@ namespace ConfrariApp
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class AdicionarSuvenir : ContentPage
 	{
-        protected Classes.Produtos prod = new Classes.Produtos();
+        protected Classes.Suvenirs prod = new Classes.Suvenirs();
 
         public AdicionarSuvenir ()
 		{

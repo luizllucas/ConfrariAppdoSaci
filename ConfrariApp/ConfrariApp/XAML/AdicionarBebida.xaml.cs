@@ -13,7 +13,7 @@ namespace ConfrariApp
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class AdicionarBebida : ContentPage
 	{
-        protected Classes.Produtos prod = new Classes.Produtos();
+        protected Classes.Bebidas prod = new Classes.Bebidas();
 
 		public AdicionarBebida ()
 		{

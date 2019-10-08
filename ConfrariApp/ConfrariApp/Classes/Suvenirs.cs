@@ -5,14 +5,14 @@ using Xamarin.Forms;
 
 namespace ConfrariApp.Classes
 {
-    public class Produtos
+    public class Suvenirs
     {
         public List<ModelProdutos> SelectAll()
         {
             try
             {
-                var produtos = ((App)Application.Current).conexao.Query<ModelProdutos>("SELECT * FROM CadastroProduto");
-                return produtos;
+                var suvenirs = ((App)Application.Current).conexao.Query<ModelProdutos>("SELECT * FROM CadastroSuvenirs");
+                return suvenirs;
             }
             catch (Exception ex)
             {
@@ -25,7 +25,7 @@ namespace ConfrariApp.Classes
         {
             try
             {
-                var query = $"INSERT INTO CadastroProduto (nome, descricao, valor, categoria) VALUES ('{nome}', '{descricao}', '{valor}', '{categoria}')";
+                var query = $"INSERT INTO CadastroSuvenirs (nome, descricao, valor, categoria) VALUES ('{nome}', '{descricao}', '{valor}', '{categoria}')";
                 ((App)Application.Current).conexao.Execute(query);
 
                 return true;
@@ -41,7 +41,7 @@ namespace ConfrariApp.Classes
         {
             try
             {
-                var query = $"UPDATE CadastroProdutos SET nome = '{nome}', descricao = '{descricao}', valor = '{valor}', categoria = '{categoria}' WHERE id = {id}";
+                var query = $"UPDATE CadastroSuvenirs SET nome = '{nome}', descricao = '{descricao}', valor = '{valor}', categoria = '{categoria}' WHERE id = {id}";
                 ((App)Application.Current).conexao.Execute(query);
 
                 return true;
@@ -56,7 +56,7 @@ namespace ConfrariApp.Classes
         {
             try
             {
-                var query = $"DELETE FROM CadastroProdutos";
+                var query = $"DELETE FROM CadastroSuvenirs";
                 ((App)Application.Current).conexao.Execute(query);
                 return true;
             }
@@ -70,7 +70,7 @@ namespace ConfrariApp.Classes
         {
             try
             {
-                var query = $"DELETE FROM CadastroProdutos WHERE id = {id}";
+                var query = $"DELETE FROM CadastroSuvenirs WHERE id = {id}";
                 ((App)Application.Current).conexao.Execute(query);
                 return true;
             }
@@ -81,3 +81,4 @@ namespace ConfrariApp.Classes
         }
     }
 }
+

@@ -26,7 +26,9 @@ namespace ConfrariApp
 
             ////criar a tabela, se ela não existir
             conexao.Execute("CREATE TABLE IF NOT EXISTS CadastroCliente (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, nome TEXT NOT NULL, login TEXT NOT NULL, data TEXT NOT NULL, telefone INTEGER NOT NULL, senha TEXT NOT NULL)");
-            conexao.Execute("CREATE TABLE IF NOT EXISTS CadastroProduto (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, nome TEXT NOT NULL, descricao TEXT NOT NULL, valor TEXT NOT NULL, categoria TEXT NOT NULL)");
+            conexao.Execute("CREATE TABLE IF NOT EXISTS CadastroBebida (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, nome TEXT NOT NULL, descricao TEXT NOT NULL, valor TEXT NOT NULL, categoria TEXT NOT NULL)");
+            conexao.Execute("CREATE TABLE IF NOT EXISTS CadastroPorcao (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, nome TEXT NOT NULL, descricao TEXT NOT NULL, valor TEXT NOT NULL, categoria TEXT NOT NULL)");
+            conexao.Execute("CREATE TABLE IF NOT EXISTS CadastroSuvenir (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, nome TEXT NOT NULL, descricao TEXT NOT NULL, valor TEXT NOT NULL, categoria TEXT NOT NULL)");
             conexao.Execute("CREATE TABLE IF NOT EXISTS CadastroReserva (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, nomeCliente TEXT NOT NULL, qtdpessoas INTEGER NOT NULL, data TEXT NOT NULL, observacao TEXT NOT NULL)");
             conexao.Execute("CREATE TABLE IF NOT EXISTS CadastroProgramacao (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, nomeprog TEXT NOT NULL, data TEXT NOT NULL, descricao TEXT NOT NULL)");
 

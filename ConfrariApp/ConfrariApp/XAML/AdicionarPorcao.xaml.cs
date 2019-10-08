@@ -12,7 +12,7 @@ namespace ConfrariApp
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class AdicionarPorcao : ContentPage
 	{
-        protected Classes.Produtos prod = new Classes.Produtos();
+        protected Classes.Porcoes prod = new Classes.Porcoes();
 
         public AdicionarPorcao ()
 		{
