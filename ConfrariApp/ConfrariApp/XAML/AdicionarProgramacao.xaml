@@ -26,7 +26,7 @@
                    FontSize="16"
                    PlaceholderColor="White"/>
 
-                    <Entry x:Name="entryDescricaoProgamacao" 
+                    <Entry x:Name="entryDescricaoProgramacao" 
                    Placeholder="Descrição/Observação"
                    Margin="5,10,30,0"
                     TextColor="white"
