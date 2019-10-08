@@ -18,9 +18,19 @@ namespace ConfrariApp
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        private void ButtonAdicionarReserva_Clicked(object sender, EventArgs e)
+        private void ButtonAdicionarPorcao_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new AdicionarPorcao());
+        }
+
+        private void AtualizarPorcao_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ApagarPorcao_Clicked(object sender, EventArgs e)
+        {
+
         }
     }
 }

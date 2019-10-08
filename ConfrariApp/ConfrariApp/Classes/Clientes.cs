@@ -25,7 +25,7 @@ namespace ConfrariApp.Classes
         {
             try
             {
-                var query = $"INSERT INTO CadastroClientes (nome, login, data, telefone, senha) VALUES ('{nome}', '{login}', '{data}', '{telefone}', '{senha}')";
+                var query = $"INSERT INTO CadastroCliente (nome, login, data, telefone, senha) VALUES ('{nome}', '{login}', '{data}', '{telefone}', '{senha}')";
                 ((App)Application.Current).conexao.Execute(query);
 
                 return true;

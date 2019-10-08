@@ -17,5 +17,10 @@ namespace ConfrariApp.XAML
 			InitializeComponent ();
             NavigationPage.SetHasNavigationBar(this, false);
         }
-	}
+
+        private void AtualizarCliente_Clicked()
+        {
+
+        }
+    }
 }

@@ -11,7 +11,7 @@ namespace ConfrariApp.Classes
         {
             try
             {
-                var produtos = ((App)Application.Current).conexao.Query<ModelProdutos>("SELECT * FROM CadastroProdutos");
+                var produtos = ((App)Application.Current).conexao.Query<ModelProdutos>("SELECT * FROM CadastroProduto");
                 return produtos;
             }
             catch (Exception ex)

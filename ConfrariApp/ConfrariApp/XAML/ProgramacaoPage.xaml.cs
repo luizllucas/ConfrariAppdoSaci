@@ -22,5 +22,15 @@ namespace ConfrariApp
         {
             Navigation.PushAsync(new AdicionarProgramacao());
         }
+
+        private void AtualizarProgramacao_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ApagarProgramacao_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

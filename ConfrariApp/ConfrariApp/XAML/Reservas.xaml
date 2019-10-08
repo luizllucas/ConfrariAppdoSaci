@@ -9,20 +9,41 @@
             <ListView x:Name="listView">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding Info}">
-                            <TextCell.ContextActions>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
                                 <MenuItem Text="Atualizar" 
-                                      x:Name="AtualizarReserva" 
-
+                                      x:Name="AtualizarReserva"                                           
                                       CommandParameter="{Binding .}" 
-                                      IsDestructive="False" />
+                                      IsDestructive="False" 
+                                          Clicked="AtualizarReserva_Clicked"/>
                                 <MenuItem Text="Apagar" 
                                       x:Name="ApagarReserva" 
-
                                       CommandParameter="{Binding .}" 
-                                      IsDestructive="True" />
-                            </TextCell.ContextActions>
-                        </TextCell>
+                                      IsDestructive="True"
+                                          Clicked="ApagarReserva_Clicked"/>
+                            </ViewCell.ContextActions>
+
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="200"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label  Grid.Column="0" Text="{Binding nomeCliente}" TextColor="Black"/>
+                                <Label  Grid.Column="1" Text="{Binding qtdpessoas}" TextColor="Black"/>
+                                <Label  Grid.Column="2" Text="{Binding data}" TextColor="Black"/>
+                                <Label Grid.Column="3" Text="{Binding observacao}" TextColor="Black"/>
+
+
+
+                            </Grid>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

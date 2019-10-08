@@ -8,23 +8,46 @@
             <ListView x:Name="listView">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding nome}">
-                            <TextCell.ContextActions>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
                                 <MenuItem Text="Atualizar" 
-                                      x:Name="AtualizarPorcoes" 
+                                      x:Name="AtualizarPorcao"                                           
                                       CommandParameter="{Binding .}" 
-                                      IsDestructive="False" />
+                                      IsDestructive="False" 
+                                          Clicked="AtualizarPorcao_Clicked"/>
                                 <MenuItem Text="Apagar" 
                                       x:Name="ApagarPorcao" 
                                       CommandParameter="{Binding .}" 
-                                      IsDestructive="True" />
-                            </TextCell.ContextActions>
-                        </TextCell>
+                                      IsDestructive="True" 
+                                          Clicked="ApagarPorcao_Clicked"/>
+                            </ViewCell.ContextActions>
+
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="200"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label  Grid.Column="0" Text="{Binding nome}" TextColor="Black"/>
+                                <Label  Grid.Column="1" Text="{Binding descricao}" TextColor="Black"/>
+                                <Label  Grid.Column="2" Text="{Binding valor}" TextColor="Black"/>
+                                <Label Grid.Column="3" Text="{Binding categoria}" TextColor="Black"/>
+
+
+
+                            </Grid>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
             <Button Text="Adicionar" 
-                    x:Name="buttonAdicionarReserva"
+                    x:Name="buttonAdicionarPorcao"
                      HorizontalOptions="Fill"
                     BackgroundColor="#800B03"
                     Margin="20,10,20,50"
@@ -32,7 +55,8 @@
                     TextColor="White"
                     FontAttributes="Bold"
                     BorderRadius="10"
-                    Clicked="ButtonAdicionarReserva_Clicked"></Button>
+            Clicked="ButtonAdicionarPorcao_Clicked">
+            </Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

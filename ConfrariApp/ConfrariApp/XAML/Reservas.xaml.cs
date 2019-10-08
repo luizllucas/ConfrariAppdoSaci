@@ -22,5 +22,15 @@ namespace ConfrariApp
         {
             Navigation.PushAsync(new AdicionarReserva());
         }
+
+        private void AtualizarReserva_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ApagarReserva_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
