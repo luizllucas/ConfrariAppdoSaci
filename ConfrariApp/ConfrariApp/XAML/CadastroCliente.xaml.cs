@@ -39,7 +39,7 @@ namespace ConfrariApp
         {
             {
                 if (string.IsNullOrEmpty(entryNomeCliente.Text) ||
-                     string.IsNullOrEmpty(entryLoginCliente.Text) ||
+                    string.IsNullOrEmpty(entryLoginCliente.Text) ||
                     string.IsNullOrEmpty(entryDataNascimento.Text) ||
                     string.IsNullOrEmpty(entryTelefone.Text) ||
                     string.IsNullOrEmpty(entrySenha.Text))
@@ -58,6 +58,7 @@ namespace ConfrariApp
                         entryTelefone.Text = "";
                         entrySenha.Text = "";
                     }
+                    
                 }
             }
         }

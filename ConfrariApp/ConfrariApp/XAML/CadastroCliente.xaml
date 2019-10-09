@@ -20,23 +20,23 @@
                    
             </Entry>
             <Entry x:Name="entryLoginCliente"
-                       Placeholder="Login"
+                   Placeholder="Login"
                    Margin="5,10,30,0"
-                    TextColor="White"
+                   TextColor="White"
                    FontSize="16"
                    PlaceholderColor="White"/>
 
             <StackLayout Orientation="Horizontal">
                 <Entry x:Name="entryDataNascimento"
                        Placeholder="Data de Nascimento"
-                       Margin="5,10,30,0"
+                       Margin="2,10,30,0"
                        TextColor="white"
                         FontSize="16"
                        PlaceholderColor="White"/>
                 <Entry x:Name="entryTelefone"
                        Placeholder="Telefone"
                        Keyboard="Numeric"
-                       Margin="2,10,30,0"
+                       Margin="2,10,0,0"
                        TextColor="white"
                        FontSize="16"
                        PlaceholderColor="white"></Entry>
@@ -46,15 +46,15 @@
                    FontAttributes="Italic"
                    IsPassword="true"
                    Margin="5,10,30,0"
-                    TextColor="white"
-                    FontSize="16"
+                   TextColor="white"
+                   FontSize="16"
                    PlaceholderColor="white"/>
             <Entry x:Name="entrySenha2" 
                    Placeholder="Confirme sua Senha"
                    FontAttributes="Italic"
                    IsPassword="True"
                    Margin="5,10,30,0"
-                    TextColor="white"
+                   TextColor="white"
                     FontSize="16"
                    PlaceholderColor="White"/>
             <StackLayout Orientation="Horizontal">

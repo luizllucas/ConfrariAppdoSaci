@@ -38,17 +38,16 @@
                         <ViewCell>
                             <ViewCell.ContextActions>
                                 <MenuItem Text="Atualizar" 
-                                      x:Name="AtualizarProgramacao"                                           
-                                      CommandParameter="{Binding .}" 
-                                      IsDestructive="False" 
+                                          x:Name="AtualizarProgramacao"                                           
+                                          CommandParameter="{Binding .}" 
+                                          IsDestructive="False" 
                                           Clicked="AtualizarProgramacao_Clicked"/>
                                 <MenuItem Text="Apagar" 
-                                      x:Name="ApagarProgramacao" 
-                                      CommandParameter="{Binding .}" 
-                                      IsDestructive="True"
+                                          x:Name="ApagarProgramacao" 
+                                          CommandParameter="{Binding .}" 
+                                          IsDestructive="True"
                                           Clicked="ApagarProgramacao_Clicked"/>
                             </ViewCell.ContextActions>
-
 
                             <Grid>
                                 <Grid.RowDefinitions>
@@ -72,10 +71,6 @@
                                         Text="{Binding descricao}" 
                                         TextColor="White"
                                         FontAttributes="Bold"/>
-
-
-
-
                             </Grid>
                         </ViewCell>
                     </DataTemplate>

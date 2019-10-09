@@ -45,12 +45,12 @@
                                       x:Name="AtualizarCliente"                                           
                                       CommandParameter="{Binding .}" 
                                       IsDestructive="False" 
-                                          Clicked="AtualizarCliente_Clicked"/>
+                                      Clicked="AtualizarCliente_Clicked"/>
                                 <MenuItem Text="Apagar" 
                                       x:Name="ApagarCliente" 
                                       CommandParameter="{Binding .}" 
                                       IsDestructive="True" 
-                                          Clicked="ApagarCliente_Clicked"/>
+                                      Clicked="ApagarCliente_Clicked"/>
                             </ViewCell.ContextActions>
 
 
@@ -74,9 +74,9 @@
                                 <Label  Grid.Column="2" 
                                         Text="{Binding data}" 
                                         TextColor="White"/>
-                                <Label Grid.Column="3" 
-                                       Text="{Binding telefone}" 
-                                       TextColor="White"/>
+                                <Label  Grid.Column="3" 
+                                        Text="{Binding telefone}" 
+                                        TextColor="White"/>
 
 
 
