@@ -21,6 +21,26 @@ namespace ConfrariApp.Classes
 
         }
 
+        public bool Login(string login, string senha)
+        {
+           
+                string query = string.Format("SELECT COUNT(*) FROM CadastroCliente WHERE login = '{0}' AND senha = '{1}'", login, senha);
+                var ResultadoSql = ((App)Application.Current).conexao.Query<ModelClientes>(query);
+
+                if (ResultadoSql.Count == 1)
+                {
+                    return true;
+                }
+ 
+                else
+                {
+                    return false;
+                }
+            
+ 
+
+        }
+
         public bool Inserir(string nome, string login, string data, string telefone, string senha)
         {
             try

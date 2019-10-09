@@ -24,14 +24,24 @@ namespace ConfrariApp
                (string.IsNullOrEmpty(entrySenha.Text)))
             {
                 DisplayAlert("Ops...", "Não deixe os campos em branco.", "Beleza!");
-            }           
-            else if (entryLogin.Text == "admin" ||
-                    entrySenha.Text == "admin")
-            {
-                
-                string cliente = entryLogin.Text;
-                Navigation.PushAsync(new MenuPrincipalCliente());
             }
+            else
+            {
+
+                Classes.Clientes usuario = new Classes.Clientes();
+                bool resultadoLogin = usuario.Login(entryLogin.Text, entrySenha.Text);
+
+                if (resultadoLogin == true)
+                {
+                    Navigation.PushAsync(new MenuPrincipalCliente());
+
+                }
+                else
+                {
+                    DisplayAlert("Erro..", "Usuário ou senha incorretos!", "Tente novamente");
+                }
+            }
+           
         }
 
         private void BtnCadastrarLogin_Clicked(object sender, EventArgs e)

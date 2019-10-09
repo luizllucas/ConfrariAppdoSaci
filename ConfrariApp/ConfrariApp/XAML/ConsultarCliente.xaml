@@ -11,8 +11,8 @@
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="80"/>
-                    <ColumnDefinition Width="100"/>
-                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="80"/>
                     <ColumnDefinition Width="200"/>
                 </Grid.ColumnDefinitions>
                 <Label Grid.Column="0" 
@@ -61,7 +61,7 @@
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="80"/>
                                     <ColumnDefinition Width="100"/>
-                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="80"/>
                                     <ColumnDefinition Width="200"/>
                                 </Grid.ColumnDefinitions>
 
