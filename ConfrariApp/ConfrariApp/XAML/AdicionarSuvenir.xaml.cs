@@ -12,7 +12,7 @@ namespace ConfrariApp
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class AdicionarSuvenir : ContentPage
 	{
-        protected Classes.Suvenirs prod = new Classes.Suvenirs();
+        protected Classes.Suvenirs suvenirs = new Classes.Suvenirs();
 
         public AdicionarSuvenir ()
 		{
@@ -31,10 +31,10 @@ namespace ConfrariApp
             }
             else
             {
-                bool ResultadoInsert = prod.Inserir(entryNomeSuvenir.Text, entryDescricaoSuvenir.Text, entryValorSuvenir.Text, entryCategoriaSuvenir.Text);
+                bool ResultadoInsert = suvenirs.Inserir(entryNomeSuvenir.Text, entryDescricaoSuvenir.Text, entryValorSuvenir.Text, entryCategoriaSuvenir.Text);
                 if (ResultadoInsert == true)
                 {
-                    DisplayAlert("Sucesso!!", "Produto inserido com sucesso!", "Ok!");
+                    DisplayAlert("Sucesso!!", "Suvenir cadastrado!", "Ok!");
                     entryNomeSuvenir.Text = "";
                     entryDescricaoSuvenir.Text = "";
                     entryValorSuvenir.Text = "";

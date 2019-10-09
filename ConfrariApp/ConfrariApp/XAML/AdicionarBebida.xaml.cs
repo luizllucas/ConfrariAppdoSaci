@@ -36,7 +36,7 @@ namespace ConfrariApp
                 bool ResultadoInsert = bebidas.Inserir(entryNomeBebida.Text, entryDescricaoBebida.Text, entryValorBebida.Text, entryCategoriaBebida.Text);
                 if (ResultadoInsert == true)
                 {
-                    DisplayAlert("Sucesso!!", "Produto inserido com sucesso!", "Ok!");
+                    DisplayAlert("Sucesso!!", "Bebida cadastrada!", "Ok!");
                     entryNomeBebida.Text = "";
                     entryDescricaoBebida.Text = "";
                     entryValorBebida.Text = "";

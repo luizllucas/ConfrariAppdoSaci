@@ -35,7 +35,7 @@ namespace ConfrariApp
                 bool ResultadoInsert = porcoes.Inserir(entryNomePorcao.Text, entryDescricaoPorcao.Text, entryValorPorcao.Text, entryCategoriaPorcao.Text);
                 if (ResultadoInsert == true)
                 {
-                    DisplayAlert("Sucesso!!", "Produto inserido com sucesso!", "Ok!");
+                    DisplayAlert("Sucesso!!", "Porção cadastrada!", "Ok!");
                     entryNomePorcao.Text = "";
                     entryDescricaoPorcao.Text = "";
                     entryValorPorcao.Text = "";

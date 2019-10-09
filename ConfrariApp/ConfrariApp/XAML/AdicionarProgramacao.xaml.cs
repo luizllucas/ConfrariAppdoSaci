@@ -33,7 +33,7 @@ namespace ConfrariApp
                 bool ResultadoInsert = prog.Inserir(entryNomeProgramacao.Text, entryDataProgramacao.Text, entryDescricaoProgramacao.Text);
                 if (ResultadoInsert == true)
                 {
-                    DisplayAlert("Sucesso!!", "Produto inserido com sucesso!", "Ok!");
+                    DisplayAlert("Sucesso!!", "Programação cadastrada!", "Ok!");
                     entryNomeProgramacao.Text = "";
                     entryDataProgramacao.Text = "";
                     entryDescricaoProgramacao.Text = "";

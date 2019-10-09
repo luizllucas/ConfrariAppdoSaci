@@ -36,7 +36,7 @@ namespace ConfrariApp
                 bool ResultadoInsert = reservas.Inserir(entryNomeclienteReserva.Text, entryQtdPessoas.Text, entryDataReserva.Text, entryObsReserva.Text);
                 if (ResultadoInsert == true)
                 {
-                    DisplayAlert("Sucesso!!", "Produto inserido com sucesso!", "Ok!");
+                    DisplayAlert("Sucesso!!", "Reserva cadastrada!", "Ok!");
                     entryNomeclienteReserva.Text = "";
                     entryQtdPessoas.Text = "";
                     entryDataReserva.Text = "";
