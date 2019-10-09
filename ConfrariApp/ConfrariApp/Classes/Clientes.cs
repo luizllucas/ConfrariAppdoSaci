@@ -21,7 +21,7 @@ namespace ConfrariApp.Classes
 
         }
 
-        public bool Inserir(string nome, string login, string data, int telefone, string senha)
+        public bool Inserir(string nome, string login, string data, string telefone, string senha)
         {
             try
             {
@@ -37,11 +37,11 @@ namespace ConfrariApp.Classes
 
         }
 
-        public bool Update(int id, string nome, string login, string data, int telefone, string senha)
+        public bool Update(int id, string nome, string login, string data, string telefone, string senha)
         {
             try
             {
-                var query = $"UPDATE CadastroClientes SET nome = '{nome}', login = '{login}', data = '{data}', telefone = '{telefone}', senha = '{senha}' WHERE id = {id}";
+                var query = $"UPDATE CadastroCliente SET nome = '{nome}', login = '{login}', data = '{data}', telefone = '{telefone}', senha = '{senha}' WHERE id = {id}";
                 ((App)Application.Current).conexao.Execute(query);
 
                 return true;
@@ -70,7 +70,7 @@ namespace ConfrariApp.Classes
         {
             try
             {
-                var query = $"DELETE FROM CadastroClientes WHERE id = {id}";
+                var query = $"DELETE FROM CadastroCliente WHERE id = {id}";
                 ((App)Application.Current).conexao.Execute(query);
                 return true;
             }

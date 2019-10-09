@@ -5,6 +5,33 @@
              BackgroundImage="backgroundConfrariApp">
     <ContentPage.Content>
         <StackLayout>
+            <Grid BackgroundColor="Black">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" 
+                       Grid.Row="0" 
+                       Text="Nome Programação"  
+                       TextColor="White" 
+                       FontAttributes="Bold,Italic"/>
+                <Label Grid.Column="1" 
+                       Grid.Row="0" 
+                       Text="Data" 
+                       TextColor="White"
+                       FontAttributes="Bold,Italic"/>
+                <Label Grid.Column="2" 
+                       Grid.Row="0" 
+                       Text="Descrição" 
+                       TextColor="White" 
+                       FontAttributes="Bold,Italic"/>
+
+            </Grid>
             <ListView x:Name="listView">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -33,9 +60,18 @@
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
 
-                                <Label  Grid.Column="0" Text="{Binding nomeprog}" TextColor="Black"/>
-                                <Label  Grid.Column="1" Text="{Binding data}" TextColor="Black"/>
-                                <Label  Grid.Column="2" Text="{Binding descrição}" TextColor="Black"/>
+                                <Label  Grid.Column="0" 
+                                        Text="{Binding nomeprog}" 
+                                        TextColor="White"
+                                        FontAttributes="Bold"/>
+                                <Label  Grid.Column="1" 
+                                        Text="{Binding data}" 
+                                        TextColor="White"
+                                        FontAttributes="Bold"/>
+                                <Label  Grid.Column="2" 
+                                        Text="{Binding descricao}" 
+                                        TextColor="White"
+                                        FontAttributes="Bold"/>
 
 
 

@@ -13,13 +13,14 @@ namespace ConfrariApp
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class AdicionarBebida : ContentPage
 	{
-        protected Classes.Bebidas prod = new Classes.Bebidas();
+        protected Classes.Bebidas bebidas = new Classes.Bebidas();
 
 		public AdicionarBebida ()
 		{
 			InitializeComponent ();
             NavigationPage.SetHasNavigationBar(this, false);
         }
+
 
         private void BtnCadastrarBebida_Clicked(object sender, EventArgs e)
         {
@@ -32,7 +33,7 @@ namespace ConfrariApp
             }
             else
             {
-                bool ResultadoInsert = prod.Inserir(entryNomeBebida.Text, entryDescricaoBebida.Text, entryValorBebida.Text, entryCategoriaBebida.Text);
+                bool ResultadoInsert = bebidas.Inserir(entryNomeBebida.Text, entryDescricaoBebida.Text, entryValorBebida.Text, entryCategoriaBebida.Text);
                 if (ResultadoInsert == true)
                 {
                     DisplayAlert("Sucesso!!", "Produto inserido com sucesso!", "Ok!");

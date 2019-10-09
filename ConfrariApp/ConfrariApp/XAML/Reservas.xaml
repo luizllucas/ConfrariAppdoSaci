@@ -6,6 +6,37 @@
              >
     <ContentPage.Content>
         <StackLayout>
+            <Grid BackgroundColor="Black">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" 
+                       Grid.Row="0" 
+                       Text="Nome Cliente"  
+                       TextColor="White" 
+                       FontAttributes="Bold,Italic"/>
+                <Label Grid.Column="1" 
+                       Grid.Row="0" 
+                       Text="Qtd Pessoas" 
+                       TextColor="White"
+                       FontAttributes="Bold,Italic"/>
+                <Label Grid.Column="2" 
+                       Grid.Row="0" 
+                       Text="Data Reserva" 
+                       TextColor="White" 
+                       FontAttributes="Bold,Italic"/>
+                <Label Grid.Column="3" 
+                       Grid.Row="0" 
+                       Text="Observação" 
+                       TextColor="White" 
+                       FontAttributes="Bold,Italic"/>
+            </Grid>
             <ListView x:Name="listView">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -35,10 +66,22 @@
                                     <ColumnDefinition Width="200"/>
                                 </Grid.ColumnDefinitions>
 
-                                <Label  Grid.Column="0" Text="{Binding nomeCliente}" TextColor="Black"/>
-                                <Label  Grid.Column="1" Text="{Binding qtdpessoas}" TextColor="Black"/>
-                                <Label  Grid.Column="2" Text="{Binding data}" TextColor="Black"/>
-                                <Label Grid.Column="3" Text="{Binding observacao}" TextColor="Black"/>
+                                <Label  Grid.Column="0" 
+                                        Text="{Binding nomeCliente}" 
+                                        TextColor="White"
+                                        FontAttributes="Bold"/>
+                                <Label  Grid.Column="1" 
+                                        Text="{Binding qtdpessoas}" 
+                                        TextColor="White"
+                                        FontAttributes="Bold"/>
+                                <Label  Grid.Column="2" 
+                                        Text="{Binding data}" 
+                                        TextColor="White"
+                                        FontAttributes="Bold"/>
+                                <Label Grid.Column="3" 
+                                       Text="{Binding observacao}" 
+                                       TextColor="White"
+                                       FontAttributes="Bold"/>
 
 
 

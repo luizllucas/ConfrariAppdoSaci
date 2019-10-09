@@ -64,7 +64,8 @@
                         BackgroundColor="#800B03"
                         BorderRadius="10"
                         Padding="10,10,10,10"
-                        TextColor="White">
+                        TextColor="White"
+                        Clicked="BtnCadastrarCliente_Clicked">
                 </Button>
                 <Button x:Name="btnLimpar"
                         Text="Limpar"

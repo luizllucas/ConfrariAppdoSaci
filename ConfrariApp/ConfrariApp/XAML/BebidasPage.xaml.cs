@@ -12,7 +12,7 @@ namespace ConfrariApp
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class BebidasPage : ContentPage
 	{
-        protected Classes.Bebidas produtos = new Classes.Bebidas();
+        protected Classes.Bebidas bebidas = new Classes.Bebidas();
 
 		public BebidasPage ()
 		{
@@ -23,7 +23,7 @@ namespace ConfrariApp
 
         private void CarregarInformacoes()
         {
-            var lista = produtos.SelectAll();
+            var lista = bebidas.SelectAll();
             listView.ItemsSource = lista;        
         }
 

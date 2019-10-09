@@ -13,7 +13,7 @@ namespace ConfrariApp
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class AdicionarReserva : ContentPage
 	{
-        protected Classes.Reservas reserva = new Classes.Reservas();
+        protected Classes.Reservas reservas = new Classes.Reservas();
 
 		public AdicionarReserva ()
 		{
@@ -33,7 +33,7 @@ namespace ConfrariApp
             }
             else
             {
-                bool ResultadoInsert = reserva.Inserir(entryNomeclienteReserva.Text, entryQtdPessoas.Text, entryDataReserva.Text, entryObsReserva.Text);
+                bool ResultadoInsert = reservas.Inserir(entryNomeclienteReserva.Text, entryQtdPessoas.Text, entryDataReserva.Text, entryObsReserva.Text);
                 if (ResultadoInsert == true)
                 {
                     DisplayAlert("Sucesso!!", "Produto inserido com sucesso!", "Ok!");

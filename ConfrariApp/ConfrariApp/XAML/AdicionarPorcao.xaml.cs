@@ -12,7 +12,7 @@ namespace ConfrariApp
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class AdicionarPorcao : ContentPage
 	{
-        protected Classes.Porcoes prod = new Classes.Porcoes();
+        protected Classes.Porcoes porcoes = new Classes.Porcoes();
 
         public AdicionarPorcao ()
 		{
@@ -20,6 +20,7 @@ namespace ConfrariApp
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
+      
         private void BtnCadastrarPorcao_Clicked(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(entryNomePorcao.Text) ||
@@ -31,7 +32,7 @@ namespace ConfrariApp
             }
             else
             {
-                bool ResultadoInsert = prod.Inserir(entryNomePorcao.Text, entryDescricaoPorcao.Text, entryValorPorcao.Text, entryCategoriaPorcao.Text);
+                bool ResultadoInsert = porcoes.Inserir(entryNomePorcao.Text, entryDescricaoPorcao.Text, entryValorPorcao.Text, entryCategoriaPorcao.Text);
                 if (ResultadoInsert == true)
                 {
                     DisplayAlert("Sucesso!!", "Produto inserido com sucesso!", "Ok!");

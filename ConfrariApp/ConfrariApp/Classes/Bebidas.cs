@@ -11,7 +11,7 @@ namespace ConfrariApp.Classes
         {
             try
             {
-                var bebidas = ((App)Application.Current).conexao.Query<ModelProdutos>("SELECT * FROM CadastroBebidas");
+                var bebidas = ((App)Application.Current).conexao.Query<ModelProdutos>("SELECT * FROM CadastroBebida");
                 return bebidas;
             }
             catch (Exception ex)
@@ -25,7 +25,7 @@ namespace ConfrariApp.Classes
         {
             try
             {
-                var query = $"INSERT INTO CadastroBebidas (nome, descricao, valor, categoria) VALUES ('{nome}', '{descricao}', '{valor}', '{categoria}')";
+                var query = $"INSERT INTO CadastroBebida (nome, descricao, valor, categoria) VALUES ('{nome}', '{descricao}', '{valor}', '{categoria}')";
                 ((App)Application.Current).conexao.Execute(query);
 
                 return true;
@@ -41,7 +41,7 @@ namespace ConfrariApp.Classes
         {
             try
             {
-                var query = $"UPDATE CadastroBebidas SET nome = '{nome}', descricao = '{descricao}', valor = '{valor}', categoria = '{categoria}' WHERE id = {id}";
+                var query = $"UPDATE CadastroBebida SET nome = '{nome}', descricao = '{descricao}', valor = '{valor}', categoria = '{categoria}' WHERE id = {id}";
                 ((App)Application.Current).conexao.Execute(query);
 
                 return true;
@@ -56,7 +56,7 @@ namespace ConfrariApp.Classes
         {
             try
             {
-                var query = $"DELETE FROM CadastroBebidas";
+                var query = $"DELETE FROM CadastroBebida";
                 ((App)Application.Current).conexao.Execute(query);
                 return true;
             }
@@ -70,7 +70,7 @@ namespace ConfrariApp.Classes
         {
             try
             {
-                var query = $"DELETE FROM CadastroBebidas WHERE id = {id}";
+                var query = $"DELETE FROM CadastroBebida WHERE id = {id}";
                 ((App)Application.Current).conexao.Execute(query);
                 return true;
             }
