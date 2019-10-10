@@ -12,7 +12,7 @@
                             <RowDefinition Height="30"/>
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="80"/>
+                            <ColumnDefinition Width="200"/>
                             <ColumnDefinition Width="100"/>
                             <ColumnDefinition Width="100"/>
                             <ColumnDefinition Width="200"/>
@@ -53,12 +53,12 @@
 
                                     <Grid>
                                         <Grid.RowDefinitions>
-                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="30" />
                                         </Grid.RowDefinitions>
                                         <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="300"/>
-                                            <ColumnDefinition Width="100"/>
                                             <ColumnDefinition Width="200"/>
+                                            <ColumnDefinition Width="80"/>
+                                            <ColumnDefinition Width="100"/>
                                         </Grid.ColumnDefinitions>
 
                                         <Label  Grid.Column="0" 
