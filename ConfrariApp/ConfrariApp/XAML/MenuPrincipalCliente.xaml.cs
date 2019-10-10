@@ -37,5 +37,14 @@ namespace ConfrariApp
         {
             Navigation.PushAsync(new CuriosidadesPage());
         }
+
+        private void BtnLocalização_Clicked(object sender, EventArgs e)
+        {
+            string urlGps = "https://www.google.com/maps/dir/-22.8826005,-48.4287712/Confraria+do+Saci/@-22.8858305,-48.4365306,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x94c6df9c144fca6b:0x948a3042fb396fdd!2m2!1d-48.4355352!2d-22.888506";
+
+
+            Device.OpenUri(new Uri(urlGps));
+
+        }
     }
 }

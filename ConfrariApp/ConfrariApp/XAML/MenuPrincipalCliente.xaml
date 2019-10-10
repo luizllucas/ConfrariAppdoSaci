@@ -49,6 +49,16 @@
                     FontAttributes="Bold,Italic"                   
                     BorderRadius="7"
                     Clicked="BtnCuriosidades_Clicked"/>
+            <Button x:Name="btnLocalização"
+                    Text="Localização"                  
+                    BackgroundColor="#800B03"
+                    Margin="0,2,100,5"
+                    Opacity="30"
+                    TextColor="White"
+                    FontSize="20"
+                    FontAttributes="Bold,Italic"                   
+                    BorderRadius="7"
+                    Clicked="BtnLocalização_Clicked"/>
             <Image Source="confraria"
                    Margin="0,140,0,0"/>
         </StackLayout>
