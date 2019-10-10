@@ -5,90 +5,94 @@
              BackgroundImage="backgroundConfrariApp">
     <ContentPage.Content>
         <StackLayout>
-            <Grid BackgroundColor="Black">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="30"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="80"/>
-                    <ColumnDefinition Width="100"/>
-                    <ColumnDefinition Width="100"/>
-                    <ColumnDefinition Width="200"/>
-                </Grid.ColumnDefinitions>
-                <Label Grid.Column="0" 
+            <ScrollView Orientation="Horizontal">
+                <StackLayout>
+                    <Grid BackgroundColor="Black">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"/>
+                             </Grid.RowDefinitions>
+                             <Grid.ColumnDefinitions>
+                             <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="200"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" 
                        Grid.Row="0" 
                        Text="Nome"  
                        TextColor="White" 
                        FontAttributes="Bold,Italic"/>
-                <Label Grid.Column="1" 
+                        <Label Grid.Column="1" 
                        Grid.Row="0" 
                        Text="Descrição" 
                        TextColor="White"
                        FontAttributes="Bold,Italic"/>
-                <Label Grid.Column="2" 
+                        <Label Grid.Column="2" 
                        Grid.Row="0" 
                        Text="Valor" 
                        TextColor="White" 
                        FontAttributes="Bold,Italic"/>
-                <Label Grid.Column="3" 
+                        <Label Grid.Column="3" 
                        Grid.Row="0" 
                        Text="Categoria" 
                        TextColor="White" 
                        FontAttributes="Bold,Italic"/>
-            </Grid>
-            <ListView x:Name="listView">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <ViewCell.ContextActions>
-                                <MenuItem Text="Atualizar" 
+                    </Grid>
+                    <ListView x:Name="listView">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <ViewCell.ContextActions>
+                                        <MenuItem Text="Atualizar" 
                                       x:Name="AtualizarPorcao"                                           
                                       CommandParameter="{Binding .}" 
                                       IsDestructive="False" 
                                           Clicked="AtualizarPorcao_Clicked"/>
-                                <MenuItem Text="Apagar" 
+                                        <MenuItem Text="Apagar" 
                                       x:Name="ApagarPorcao" 
                                       CommandParameter="{Binding .}" 
                                       IsDestructive="True" 
                                           Clicked="ApagarPorcao_Clicked"/>
-                            </ViewCell.ContextActions>
+                                    </ViewCell.ContextActions>
 
 
-                            <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto" />
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="80"/>
-                                    <ColumnDefinition Width="100"/>
-                                    <ColumnDefinition Width="100"/>
-                                    <ColumnDefinition Width="200"/>
-                                </Grid.ColumnDefinitions>
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="80"/>
+                                            <ColumnDefinition Width="100"/>
+                                            <ColumnDefinition Width="100"/>
+                                            <ColumnDefinition Width="200"/>
+                                        </Grid.ColumnDefinitions>
 
-                                <Label  Grid.Column="0" 
+                                        <Label  Grid.Column="0" 
                                         Text="{Binding nome}" 
                                         TextColor="White"
                                         FontAttributes="Bold"/>
-                                <Label  Grid.Column="1" 
+                                        <Label  Grid.Column="1" 
                                         Text="{Binding descricao}" 
                                         TextColor="White"
                                         FontAttributes="Bold"/>
-                                <Label  Grid.Column="2" 
+                                        <Label  Grid.Column="2" 
                                         Text="{Binding valor}" 
                                         TextColor="White"
                                         FontAttributes="Bold"/>
-                                <Label Grid.Column="3" 
+                                        <Label Grid.Column="3" 
                                        Text="{Binding categoria}" 
                                        TextColor="White"
                                        FontAttributes="Bold"/>
 
 
 
-                            </Grid>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </ScrollView>
             <Button Text="Adicionar" 
                     x:Name="buttonAdicionarPorcao"
                      HorizontalOptions="Fill"

@@ -29,9 +29,9 @@ namespace ConfrariApp
             {
 
                 Classes.Clientes usuario = new Classes.Clientes();
-                bool resultadoLogin = usuario.Login(entryLogin.Text, entrySenha.Text);
+                int resultadoLogin = usuario.Login(entryLogin.Text, entrySenha.Text);
 
-                if (resultadoLogin == true)
+                if (resultadoLogin == 1)
                 {
                     Navigation.PushAsync(new MenuPrincipalCliente());
 
@@ -47,6 +47,15 @@ namespace ConfrariApp
         private void BtnCadastrarLogin_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new CadastroCliente());
+        }
+
+        private void BtnFacebook_Clicked(object sender, EventArgs e)
+        {
+            string urlFace = "https://www.facebook.com";
+
+
+            Device.OpenUri(new Uri(urlFace));
+            Navigation.PushAsync(new MenuPrincipalCliente());
         }
     }
 }

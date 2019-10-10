@@ -85,8 +85,6 @@
                         Padding="10"
                         Clicked="BtnConsultar_Clicked"
                         TextColor="White"/>
-
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

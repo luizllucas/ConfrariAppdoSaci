@@ -55,11 +55,11 @@
                 </StackLayout>
 
                 <ImageButton Source="loginfacebook"
-                             HeightRequest="120"
-                             BackgroundColor="Transparent">
+                             x:Name="btnFacebook"
+                    HeightRequest="120"
+                             BackgroundColor="Transparent"
+                             Clicked="BtnFacebook_Clicked">
                 </ImageButton>
-
-
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

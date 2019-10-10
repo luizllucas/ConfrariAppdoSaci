@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConfrariApp.XAML.sobre"
+             BackgroundImage="backgroundConfrariApp">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Margin="0,0,0,0"
+                    Text="Sobre o Aplicativo"
+                   BackgroundColor="Black"
+                   FontAttributes="Bold"
+                   TextColor="White"/>
+            <Label Text="Este aplicativo foi desenvolvido"
+                   Margin="5,20,0,0"
+                   TextColor="White"
+                   FontAttributes="Bold"/>
+            <Label Text="pelo aluno Luiz Lucas de Camargo Carmoni,"
+                   Margin="5,0,0,0"
+                   TextColor="White"
+                   FontAttributes="Bold"/>
+            <Label Text="do Técnico em Informática 27 do Senac Botucatu."
+                   Margin="5,0,0,0"
+                   TextColor="White"
+                   FontAttributes="Bold"/>
+            <Label Text="Softwares utilizados para o desenvolvimento do App:"
+                   Margin="5,0,0,0"
+                   TextColor="White"
+                   FontAttributes="Bold"/>
+            <Label Text="Microsoft Visual Studio."
+                   Margin="5,20,0,0"
+           TextColor="White"
+                   FontAttributes="Italic"/>
+            <Label Text="Visual Paradigm."
+                   Margin="5,20,0,0"
+           TextColor="White"
+                   FontAttributes="Italic"/>
+            <Label Text="Inkscape."
+                   Margin="5,20,0,0"
+              TextColor="White"
+                   FontAttributes="Italic"/>
+            <Label Text="Adobe Photoshop."
+                    Margin="5,20,0,0"
+             TextColor="White"
+                   FontAttributes="Italic"/>
+            <Label Text="Gimp."
+                   Margin="5,20,0,0"
+               TextColor="White"
+                   FontAttributes="Italic,Bold"/>
+            <Label Text="Microsoft Word."
+                   Margin="5,20,0,0"
+                   TextColor="White"
+                   FontAttributes="Italic"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

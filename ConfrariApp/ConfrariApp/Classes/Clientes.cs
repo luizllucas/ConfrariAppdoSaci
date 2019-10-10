@@ -21,7 +21,7 @@ namespace ConfrariApp.Classes
 
         }
 
-        public bool Login(string login, string senha)
+        public int Login(string login, string senha)
         {
            
                 string query = string.Format("SELECT COUNT(*) FROM CadastroCliente WHERE login = '{0}' AND senha = '{1}'", login, senha);
@@ -29,12 +29,12 @@ namespace ConfrariApp.Classes
 
                 if (ResultadoSql.Count == 1)
                 {
-                    return true;
+                    return 1;
                 }
  
                 else
                 {
-                    return false;
+                    return 2;
                 }
             
  
@@ -68,7 +68,7 @@ namespace ConfrariApp.Classes
             }
             catch (Exception ex)
             {
-                throw new Exception("Houve um erro ao inserir\nDetalhes:" + ex.Message);
+                throw new Exception("Houve um erro ao atualizar\nDetalhes:" + ex.Message);
             }
         }
 

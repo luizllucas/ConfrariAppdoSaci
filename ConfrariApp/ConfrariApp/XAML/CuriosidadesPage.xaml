@@ -25,6 +25,14 @@
                     TextColor="White"
                     BorderRadius="20"
                     Clicked="BtnColetaneaLink_Clicked"></Button>
+
+            <Button x:Name="btnSobreApp"
+                    Text="Sobre o Aplicativo"
+                    Margin="30,400,30,30"
+                    BackgroundColor="#800B03"
+                    TextColor="White"
+                    BorderRadius="20"
+                    Clicked="BtnSobreApp_Clicked"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

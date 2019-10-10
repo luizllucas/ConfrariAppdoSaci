@@ -35,5 +35,13 @@ namespace ConfrariApp
             Device.OpenUri(new Uri(urlsacilivro));
        
         }
+
+        private void BtnSobreApp_Clicked(object sender, EventArgs e)
+        {
+            XAML.sobre sobre = new XAML.sobre();
+            Navigation.PushAsync(new XAML.sobre());
+        }
+
+
     }
 }
